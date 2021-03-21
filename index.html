@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERIFICADOR DE IDADE</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>VERIFICADOR DE IDADE</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input class="input" type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input class="radio" type="radio" name="radsexo" id="mas">
+                <label for="masc">Masculino</label>
+                <input class="radio" type="radio" name="radsexo" id="fem" checked>
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input class="btn button-verificar btn-lg btn-block" type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div class="res" id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Amaury Queiroz Jr</p>
+    </footer>
+    <script src="/script/scrypt.js"></script>
+</body>
+</html>
